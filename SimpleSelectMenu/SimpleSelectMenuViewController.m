@@ -81,7 +81,7 @@ NSString * const kKeyValueField = @"valueField";
     CGFloat headerHeight = self.headerView.frame.size.height;
     
     totalHeight = tableViewContentHeight;
-    if(self.headerText != nil && self.headerText.length > 0)
+    if([self headerTextExists])
     {
         totalHeight += headerHeight;
     }
@@ -382,7 +382,7 @@ NSString * const kKeyValueField = @"valueField";
 
 - (void)setupHeader
 {
-    if(self.headerText != nil && self.headerText.length > 0)
+    if([self headerTextExists])
     {
         [self.lblHeaderTitle setText:self.headerText];
     }
@@ -417,6 +417,11 @@ NSString * const kKeyValueField = @"valueField";
     // special date format but fall back to a default one.
     
     return returnString;
+}
+
+- (BOOL)headerTextExists
+{
+    return self.headerText != nil && self.headerText.length > 0;
 }
 
 - (NSString *)reuseIDForTableViewCell:(SimpleSelectMenuTableViewCell)cell
