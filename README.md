@@ -31,7 +31,19 @@ See SimpleSelectMenuViewController.h for more options!
 
 ### Cell Styles
 A few UITableViewCell styles are provided but these can be customized to your liking.
+
   - Basic
+  
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Images/Basic.png" width="302">
+
   - Subtitle
+  
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Images/Subtitle.png" width="302">
+
   - Right Detail
+  
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Images/Right_Detail.png" width="302">
+
   - Basic Image
+  
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Images/Basic_Image.png" width="302">
